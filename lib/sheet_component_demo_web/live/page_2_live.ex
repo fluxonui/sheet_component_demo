@@ -11,7 +11,7 @@ defmodule SheetComponentDemoWeb.Page2Live do
       <h1 class="text-2xl font-bold">Hello from Page 2</h1>
 
       <div class="flex flex-col gap-4 mt-8">
-        <p :for={i <- 1..100}>Content of page 2 to force scroll</p>
+        <p :for={_i <- 1..100}>Content of page 2 to force scroll</p>
       </div>
     </div>
     """
