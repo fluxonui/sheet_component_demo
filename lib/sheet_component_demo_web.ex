@@ -84,11 +84,12 @@ defmodule SheetComponentDemoWeb do
       # HTML escaping functionality
       import Phoenix.HTML
       # Core UI components and translation
-      import SheetComponentDemoWeb.CoreComponents
       import SheetComponentDemoWeb.Gettext
 
       # Shortcut for generating JS commands
       alias Phoenix.LiveView.JS
+
+      use Fluxon
 
       # Routes generation with the ~p sigil
       unquote(verified_routes())

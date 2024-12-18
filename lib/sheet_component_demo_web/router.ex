@@ -17,7 +17,8 @@ defmodule SheetComponentDemoWeb.Router do
   scope "/", SheetComponentDemoWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", PageLive
+    live "/page-2", Page2Live
   end
 
   # Other scopes may use custom stacks.
